@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/font/Rubik.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300 900;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Rubik';
+  font-size: 1rem;
+  background-color: #071952;
+  color: #FEDB39;
+}
+main {
+  inline-size: 25rem;
+  margin-inline: auto;
+  max-width: 25rem;
+}
+input, button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border-radius: .5rem;
+  color: inherit;
+  letter-spacing: .5px;
+}
+input {
+  padding: .5rem;
+  inline-size: 100%;
+  border: 1px solid currentColor;
+}
+div {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+button {
+  padding-block: .4rem;
+  flex-grow: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #FEDB39;
+  border: 1px solid #FEDB39;
+  color: #071952;
+}
+button:last-of-type {
+  background-color: transparent;
+  color: #FEDB39;
+}
+ul {
+  padding-left: 0;
+  display: grid;
+  gap: .8rem;
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-underline-offset: .2rem;
+}
+:focus-within {
+  outline: none;
+}
